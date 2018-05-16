@@ -1,6 +1,7 @@
 #' Create quoted character vectors
 #'
 #' @param ... text to be concatenated.
+#' @export
 #' @return A quoted character vector.
 #' @examples
 #' Cs(some, pig)
@@ -13,6 +14,7 @@ Cs <- function(...) {as.character(sys.call())[-1]}
 #'
 #' @param x A vector of strings, typically the result of names(...).
 #' @return A character vector in r-ish format, i.e. lowercase text with words separated by '.'.
+#' @export
 #' @examples
 #' fix.sdb.names(c("SDBSrcSysKey", "QuarterlyGPA", "AcademicYear"))
 

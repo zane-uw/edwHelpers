@@ -16,12 +16,14 @@ NULL
 
 #' Next quarter
 #' @rdname qtrfuns
+#' @export
 next.qtr <- function(x){
   ifelse(x == 4, 1, x + 1)
 }
 
 #' Previous quarter
 #' @rdname qtrfuns
+#' @export
 last.qtr <- function(x){
   ifelse(x == 1, 4, x - 1)
 }
@@ -48,20 +50,24 @@ NULL
 
 #' Return the quarter from yyyyq
 #' @rdname yrqfuns
+#' @export
 get.q <- function(x) { x %% 10 }
 
 #' Return year from yyyyq
 #' @rdname yrqfuns
+#' @export
 get.y <- function(x) { x %/% 10 }
 
 #' Get next yyyyq
 #' @rdname yrqfuns
+#' @export
 next.yrq <- function(x){
   ifelse((x %% 10) == 4, x + 7, x + 1)
 }
 
 #' Get next fall yyyyq
 #' @rdname yrqfuns
+#' @export
 next.fall <- function(x){
   ifelse(get.q(x) < 4,
          get.y(x) * 10 + 4,
@@ -83,6 +89,7 @@ next.fall <- function(x){
 #' x <- c(20031, 19804, 20181)
 #' y <- c(20203, 19794, 20174)
 #' qtr.diff(x, y)
+#' @export
 qtr.diff <- function(yrq1, yrq2){
   ((get.y(yrq1) - get.y(yrq2)) * 4) + (get.q(yrq1) - get.q(yrq2))
 }
