@@ -17,4 +17,5 @@ Create quoted character vectors
 }
 \examples{
 Cs(some, pig)
+
 }

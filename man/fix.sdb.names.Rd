@@ -17,4 +17,5 @@ Make friendlier names for SDB fields
 }
 \examples{
 fix.sdb.names(c("SDBSrcSysKey", "QuarterlyGPA", "AcademicYear"))
+
 }
