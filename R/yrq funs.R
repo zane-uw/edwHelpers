@@ -65,6 +65,13 @@ next.yrq <- function(x){
   ifelse((x %% 10) == 4, x + 7, x + 1)
 }
 
+#' Get last yyyyq
+#' @rdname yrqfuns
+#' @export
+last.yrq <- function(x){
+  ifelse((x %% 10) == 1, x - 7, x - 1)
+}
+
 #' Get next fall yyyyq
 #' @rdname yrqfuns
 #' @export
