@@ -11,7 +11,9 @@ Cs <- function(...) {as.character(sys.call())[-1]}
 
 
 
-#' Make friendlier names for SDB fields
+#' Make friendlier names for SDB fields.
+#'
+#' @description Standardize columns names into preferred format (e.g. 'r-ify them with . as the separator)
 #'
 #' @param x A vector of strings, typically the result of names(...).
 #' @return A character vector in r-ish format, i.e. lowercase text with words separated by '.'.
@@ -26,7 +28,7 @@ fix.sdb.names <- function(x = "EDWSampleVarName"){
 }
 
 #' Trim excess whitespace from data frame cols
-#'
+#' @description In many cases it may be preferable to use the tidyverse version of `mutate_if(is.character, trimws)`. This provides the same functionality.
 #' @param df A data.frame
 #' @return A data.frame with whitespace trimmed from characters columns.
 #'

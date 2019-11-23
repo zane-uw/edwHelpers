@@ -2,7 +2,7 @@
 % Please edit documentation in R/txt funs.R
 \name{fix.sdb.names}
 \alias{fix.sdb.names}
-\title{Make friendlier names for SDB fields}
+\title{Make friendlier names for SDB fields.}
 \usage{
 fix.sdb.names(x = "EDWSampleVarName")
 }
@@ -13,7 +13,7 @@ fix.sdb.names(x = "EDWSampleVarName")
 A character vector in r-ish format, i.e. lowercase text with words separated by '.'.
 }
 \description{
-Make friendlier names for SDB fields
+Standardize columns names into preferred format (e.g. 'r-ify them with . as the separator)
 }
 \examples{
 fix.sdb.names(c("SDBSrcSysKey", "QuarterlyGPA", "AcademicYear"))

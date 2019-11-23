@@ -13,7 +13,7 @@ trim.white(df)
 A data.frame with whitespace trimmed from characters columns.
 }
 \description{
-Trim excess whitespace from data frame cols
+In many cases it may be preferable to use the tidyverse version of `mutate_if(is.character, trimws)`. This provides the same functionality.
 }
 \examples{
 x <- data.frame("a" = c(" Wilbur  ", "Charlotte A. Cavatica  ", "  Fern Arable   ", " Templeton  "), "b" = 1:4)

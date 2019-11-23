@@ -5,14 +5,17 @@
 \alias{get.q}
 \alias{get.y}
 \alias{next.yrq}
+\alias{last.yrq}
 \alias{next.fall}
-\title{Next/last Academic Quarters}
+\title{Next/last academic year-quarters, i.e. yyyyq format.}
 \usage{
 get.q(x)
 
 get.y(x)
 
 next.yrq(x)
+
+last.yrq(x)
 
 next.fall(x)
 }
@@ -26,14 +29,6 @@ An integer - either a subset fo the year-quarter or a modified 5-digit code.
 Basic functions to deal with year-quarter codes.
   The functions get.q() and get.y() return a single quarter or year.
   The 'next' functions return the next year-quarter or next fall.
-
-Return the quarter from yyyyq
-
-Return year from yyyyq
-
-Get next yyyyq
-
-Get next fall yyyyq
 }
 \examples{
 get.q(19804)

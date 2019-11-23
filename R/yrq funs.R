@@ -1,6 +1,6 @@
 # Functions for quarters only ---------------------------------------------
 
-#' Next/last Academic Quarters
+#' Next/last academic quarters
 #'
 #' @description Simple functions to correctly increment academic quarters. I.e. 4 (Fall) should roll to 1 (Winter).
 #' @param x a quarter, numeric from 1:4 (Winter > Spring > Summer > Fall)
@@ -29,7 +29,7 @@ last.qtr <- function(x){
 }
 
 # Functions for yrqs (yyyyq) ----------------------------------------------
-#' Next/last Academic Quarters
+#' Next/last academic year-quarters, i.e. yyyyq format.
 #'
 #' @description Basic functions to deal with year-quarter codes.
 #'   The functions get.q() and get.y() return a single quarter or year.

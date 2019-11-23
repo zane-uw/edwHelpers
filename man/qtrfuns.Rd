@@ -4,7 +4,7 @@
 \alias{qtrfuns}
 \alias{next.qtr}
 \alias{last.qtr}
-\title{Next/last Academic Quarters}
+\title{Next/last academic quarters}
 \usage{
 next.qtr(x)
 
@@ -18,10 +18,6 @@ The next, or prior, academic quarter, an integer from 1:4.
 }
 \description{
 Simple functions to correctly increment academic quarters. I.e. 4 (Fall) should roll to 1 (Winter).
-
-Next quarter
-
-Previous quarter
 }
 \examples{
 next.qtr(4)
